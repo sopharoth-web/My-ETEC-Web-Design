@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .form{
+            width: 400px;
+            margin: auto;
+            border: 2px solid black;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .title{
+            color: brown;
+            text-shadow: 1px 1px gray, 2px 2px gray;
+            text-decoration: underline;
+        }
+        .form label{
+            color: gray;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .form input{
+            width: 98%;
+            font-size: 15px;
+            border-radius: 20px;
+            border: none;
+            padding-left: 10px;
+            background-color: rgb(153, 130, 130);
+            color: aliceblue;
+        }
+        .form textarea{
+            width: 98%;
+            font-size: 15px;
+            border-radius: 20px;
+            border: none;
+            padding-left: 10px;
+            background-color: rgb(153, 130, 130);
+
+        }
+        .form button{
+            border-radius: 15px;
+            border: none;
+            background-color: rgb(153, 130, 130);
+        }
+        .submit{
+            margin-left: 180px; 
+            font-size: 15px;
+            font-style: italic;
+    
+        }
+        .form input::placeholder{
+            color: rgb(60, 58, 58);
+            font-style: italic;
+            font-size: 13px;
+        }
+        
+    </style>
+</head>
+<body>
+    <form class="form">
+        <h1 class="title">Contact Form</h1>
+
+        <label>Enter Firstname</label><br>
+        <input type="text" name="firstname" placeholder="(e,g.Jake)">
+        <br><br>
+
+        <label>Enter Email</label><br>
+        <input type="email" name="email" placeholder="(e,g.jake123@gmail.com)">
+        <br><br>
+        <label>Enter Password</label><br>
+        <input type="password" name="password" placeholder="(e,g.12345678)">
+        <br><br>
+        <label for="">Text Message</label><br>
+        <textarea name="text" id=""></textarea>
+        <br><br>
+        <button class="submit">Submit</button>
+        
+
+    </form>
+
+</body>
+</html>
